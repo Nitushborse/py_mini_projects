@@ -1,0 +1,130 @@
+Working in a team on **GitHub** involves collaboration through branches, commits, pull requests, and code reviews. Here’s a **step-by-step guide**:
+
+---
+
+## ✅ **1. Create or Join a Repository**
+
+### **If you are the owner:**
+
+1. Create a new repository (`New → Repository`).
+2. Add collaborators (`Settings → Collaborators → Add people`).
+
+### **If you are a collaborator:**
+
+* Accept the invitation to the repository from the owner.
+
+---
+
+## ✅ **2. Clone the Repository**
+
+Each team member should clone the repository to their local machine:
+
+```bash
+git clone https://github.com/username/repository-name.git
+cd repository-name
+```
+
+---
+
+## ✅ **3. Create a New Branch for Your Work**
+
+Never work directly on the `main` branch. Create a feature branch:
+
+```bash
+git checkout -b feature-branch-name
+```
+
+Example:
+
+```bash
+git checkout -b add-login-page
+```
+
+---
+
+## ✅ **4. Make Changes and Commit**
+
+Edit files, then add and commit changes:
+
+```bash
+git add .
+git commit -m "Added login page UI"
+```
+
+---
+
+## ✅ **5. Push Changes to GitHub**
+
+Push your branch to the remote repository:
+
+```bash
+git push origin feature-branch-name
+```
+
+---
+
+## ✅ **6. Create a Pull Request (PR)**
+
+1. Go to the repository on GitHub.
+2. Click **“Compare & pull request”**.
+3. Add a meaningful title and description.
+4. Submit the PR for review.
+
+---
+
+## ✅ **7. Code Review & Merge**
+
+* Other team members review the PR and suggest changes.
+* Once approved, the PR is merged into `main` or `develop`.
+
+---
+
+## ✅ **8. Update Your Local Main Branch**
+
+After merges, always update your local copy:
+
+```bash
+git checkout main
+git pull origin main
+```
+
+Then rebase or merge your feature branches if needed.
+
+---
+
+## ✅ **9. Resolve Conflicts (if any)**
+
+If two members edit the same file, conflicts may occur. You need to manually edit the files, then:
+
+```bash
+git add conflicted-file
+git commit
+git push
+```
+
+---
+
+## ✅ **10. Follow a Git Workflow**
+
+Most teams follow one of these workflows:
+
+* **Feature Branch Workflow** (common for small teams)
+* **GitFlow Workflow** (for large projects with `develop`, `release`, `hotfix` branches)
+* **Forking Workflow** (for open-source contributions)
+
+---
+
+### 📌 **Tips for Teamwork on GitHub**
+
+✔ Write clear commit messages.
+✔ Always pull before starting new work (`git pull origin main`).
+✔ Use `.gitignore` to avoid uploading unnecessary files.
+✔ Communicate with the team about branch names & tasks.
+✔ Use GitHub Issues & Projects for task management.
+
+---
+
+Do you want me to:
+✅ explain **how to manage tasks with GitHub Projects & Issues?**
+✅ or **show a full practical example of team collaboration step by step?**
+✅ or **give you a recommended Git workflow for student projects?**
