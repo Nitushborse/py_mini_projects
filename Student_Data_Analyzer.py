@@ -1,7 +1,7 @@
 """
 Date: 16/07/2025
 Time: pass
-topic: mini project
+topic: Student Data Analyzer
 """
 
 roll_n = []
